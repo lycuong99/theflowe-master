@@ -1,0 +1,68 @@
+.page-title {
+  font-family: "Hermes", cursive;
+  text-align: center;
+  font-size: 72px;
+  font-weight: 200;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.page-title:hover {
+  color: #740000;
+  font-size: 86px;
+}
+
+main {
+  background-color: #61702f;
+  /* height: 100vh; */
+  padding-top: 154px;
+  padding-bottom: 36px;
+}
+.about-section {
+  max-width: 1598px;
+  margin: 36px auto 0;
+  padding-bottom: 62px;
+}
+.about-section h3 {
+  text-decoration: none;
+  font-size: 48px;
+  font-family: "MyWebFont", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.2em;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
+
+  margin-bottom: 36px;
+}
+.about-section p {
+  text-decoration: none;
+  font-size: 36px;
+  font-family: "BASKVILL", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
+  text-transform: lowercase;
+  line-height: 60px;
+
+  margin-bottom: 90px;
+}
+.about-section h4 {
+  text-decoration: none;
+  font-size: 36px;
+  font-family: "MyWebFont", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.4em;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
+  line-height: 38px;
+  text-transform: lowercase;
+}
