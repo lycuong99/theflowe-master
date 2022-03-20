@@ -8,6 +8,7 @@
   /* Track */
   /* Handle */
   /* Handle on hover */
+  transition: all 0.2s ease-in;
 }
 
 * ::-webkit-scrollbar {
@@ -36,6 +37,17 @@
 * ::selection {
   color: #eb5a5a;
   background: rgba(255, 255, 255, 0.5);
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+button:active {
+  box-shadow: rgba(65, 8, 8, 0.651) 10px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 2px 18px 36px -18px inset;
 }
 
 @font-face {
@@ -491,12 +503,12 @@
 .newproduct__row__item__price button {
   background-color: #740000;
   color: #fff;
-  padding: 3px 40px;
+  padding: 4px 40px;
   outline: none;
   border: none;
   border-radius: 20px;
   font-family: "MyWebFont", sans-serif;
-  font-size: 18px;
+  font-size: 36px;
   font-weight: 400;
   cursor: pointer;
   -webkit-transition: all 0.4s;

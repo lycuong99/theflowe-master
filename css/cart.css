@@ -29,8 +29,7 @@ section {
 
   margin-bottom: 100px;
 }
-.header-container .page-title {
-}
+
 .header-container a {
   text-decoration: none;
   color: black;
@@ -229,7 +228,8 @@ input[type="radio"]::before {
   position: absolute;
   border-radius: 50%;
 }
-input[type="date"],input[type="time"] {
+input[type="date"],
+input[type="time"] {
   border: 1px solid #740000;
   border-radius: 50px;
   height: 60px;

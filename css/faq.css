@@ -63,7 +63,6 @@ ul.questions-list li a:hover {
 .question-img:hover {
   /* max-height: calc(714px * 1.1); */
   max-width: calc(465px * 1.1);
-
 }
 .question-img img {
   height: 100%;

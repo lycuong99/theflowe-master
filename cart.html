@@ -68,16 +68,16 @@
         <a href="" class="active">
           <img src="./images/cart-icon.svg" alt="cart"
         /></a>
-        <a href="" class="header__login__button">Log in</a>
+        <a href="./login.html" class="header__login__button">Log in</a>
       </div>
     </div>
 
     <main>
       <div>
         <div class="header-container">
-          <a href="#" onclick="(e)=>{e.preventDefault(); history.back();}"
-            ><img src="./images/arrow-back.svg"
-          /></a>
+          <button href="#" onclick="history.back();"></button>
+            <img src="./images/arrow-back.svg" />
+          </button>
           <h3 class="page-title">Cart</h3>
           <div></div>
         </div>
@@ -117,7 +117,9 @@
                   </div>
                 </div>
               </div>
-              <img class="del-icon" src="./images/delete-icon.svg" alt="" />
+              <button onclick="this.parentNode.remove();">
+                <img class="del-icon" src="./images/delete-icon.svg" alt="" />
+              </button>
             </div>
             <div class="cart-item-container">
               <div>
@@ -191,14 +193,14 @@
             </div>
             <div class="other-method">
               <div class="payment-method">
-                <input type="radio" name="payment" />
-                <label for="" class="payment-label">
+                <input type="radio" id="payment-visa" name="payment" />
+                <label for="payment-visa" class="payment-label">
                   <img src="./images/image 1.png" alt="" />
                 </label>
               </div>
               <div class="payment-method">
-                <input type="radio" name="payment" />
-                <label for="" class="payment-label">
+                <input type="radio" id="payment-momo" name="payment" />
+                <label for="payment-momo" class="payment-label">
                   <img src="./images/image 2.png" alt="" />
                 </label>
               </div>
