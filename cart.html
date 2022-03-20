@@ -126,12 +126,12 @@
                 <input type="radio" name="cart-item" id="" />
               </div>
               <div class="img">
-                <img src="./images/Ellipse 30.png" alt="" />
+                <img src="./images/Ellipse 31.png" alt="" />
               </div>
               <div class="cart-item">
-                <h4 class="name">Wild and Sexy</h4>
+                <h4 class="name">Blessed with Love</h4>
                 <p class="detail">
-                  Products include: baby daisies, roses, gerberas, hydrangeas
+                    Products include: Roses, ranunculus, blue chrysanthemums,
                 </p>
                 <div class="bottom">
                   <span class="price">49$</span>
@@ -143,7 +143,7 @@
                       class="quantity"
                       min="0"
                       name="quantity"
-                      value="1"
+                      value="2"
                       type="number"
                     />
                     <button
@@ -207,8 +207,8 @@
             </div>
           </div>
           <div class="payment-summary">
-            <div class="row"><span>Amount</span> <span>2</span></div>
-            <div class="row total"><span>Total</span> <span>98$</span></div>
+            <div class="row"><span>Amount</span> <span id="amount">3</span></div>
+            <div class="row total"><span>Total</span> <span id="total-value">147$</span></div>
             <!-- <div class="divider"></div> -->
             <button class="btn">Payment</button>
           </div>
@@ -258,5 +258,24 @@
         </div>
       </div>
     </div>
+    <script>
+       function update(){
+        let arr = document.getElementsByName('quantity');
+        let total = 0;
+        for (let i = 0; i < arr.length; i++) {
+            let e = arr[i];
+            total+= parseInt(e.value);
+        }
+        document.querySelector('#total-value').innerHTML = `${total*49}$`;
+        document.querySelector('#amount').innerHTML = `${total}$`;
+        console.log('UPDATE', total);
+       }
+       
+       let numberInputs = document.getElementsByClassName('number-input');
+       for (let i = 0; i <  numberInputs.length; i++) {
+        numberInputs[i].addEventListener('click', update);
+       }
+    </script>
+  
   </body>
 </html>
