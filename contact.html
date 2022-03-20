@@ -43,6 +43,79 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/index.css" />
+    <style>
+      .page-title {
+        font-family: "Hermes", cursive;
+        text-align: center;
+        font-size: 68px;
+        font-weight: 200;
+        color: #ffffff;
+        transition: all 0.3s;
+      }
+      .page-title:hover {
+        color: #740000;
+        font-size: 86px;
+      }
+
+      main {
+        background-color: #61702f;
+        /* height: 100vh; */
+        padding-top: 108px;
+        padding-bottom: 36px;
+      }
+
+      .contact-section {
+        margin-top: 36px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        /* padding-bottom: 62px; */
+        overflow: hidden;
+      }
+      .contact-section h3 {
+        text-decoration: none;
+        font-size: 32px;
+        font-family: "MyWebFont", sans-serif;
+        font-weight: 400;
+        color: #fff;
+        letter-spacing: 0.2em;
+        display: inline-block;
+        position: relative;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s ease-in-out;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+
+        margin-bottom: 24px;
+      }
+      .contact-list-container {
+        max-width: 678px;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        padding-left: 162px;
+        color: #ffffff;
+      }
+      .contact-section ul {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 50px;
+        /* or 167% */
+        list-style: none;
+        letter-spacing: 0.1em;
+        text-transform: lowercase;
+      }
+      .contact-img {
+        align-self: flex-end;
+        position: relative;
+      }
+      .contact-img img {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
   </head>
 
   <body>
@@ -64,12 +137,45 @@
       </div>
 
       <div class="header__login">
-        <img src="./images/Vector.png" alt="cart" />
+        <a href="./cart.html"> <img src="./images/Vector.png" alt="cart" /></a>
         <a href="" class="header__login__button">Log in</a>
       </div>
     </div>
 
-    <main></main>
+    <main>
+      <h3 class="page-title">Contact</h3>
+      <section class="contact-section">
+        <div class="contact-list-container">
+          <div>
+            <h3>Opening Hours</h3>
+            <ul>
+              <li>Monday - Friday: 7am - 5pm</li>
+              <li>Saturday: 9am - 3pm</li>
+              <li>Sunday: CLOSED</li>
+            </ul>
+          </div>
+          <div>
+            <h3>The Sun’s Phone number</h3>
+            <ul>
+              <li>hannah: 800-440-6105</li>
+              <li>bao uy: 856-678-3611</li>
+              <li>hoang ha: 856-485-0080</li>
+            </ul>
+          </div>
+          <div>
+            <h3 style="max-width: 427px">Connect With Us on Social Media:</h3>
+            <ul>
+              <li>/thesunflowershop</li>
+              <li>/thesunshop</li>
+              <li>/thesunneeeee</li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact-img">
+          <img src="./images/b@300x 1.png" alt="" />
+        </div>
+      </section>
+    </main>
 
     <div class="footer">
       <div class="footer__row">

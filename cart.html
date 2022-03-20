@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Sun - Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="http://fonts.cdnfonts.com/css/caustic" rel="stylesheet" />
+    <!-- <link href="http://fonts.cdnfonts.com/css/raffline" rel="stylesheet"> -->
+    <link
+      href="http://fonts.cdnfonts.com/css/autografia-personal-use-only"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn.pixabay.com/photo/2018/03/04/08/58/flower-3197493_1280.png"
+    />
+    <link
+      href="https://www.dafontfree.net/embed/YmFza2VydmlsbGUtb2xkLWZhY2UtcmVndWxhciZkYXRhLzEzL2IvNjQ0NjkvQkFTS1ZJTEwuVFRG"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header__logo">
+        <a href="index.html"
+          ><img src="./images/Asset 1@300x 3.png" alt="logo"
+        /></a>
+      </div>
+
+      <div class="header__center">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+          <li><a href="./about-us.html">About Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="header__login">
+        <a href="" class="active">
+          <img src="./images/cart-icon.svg" alt="cart"
+        /></a>
+        <a href="" class="header__login__button">Log in</a>
+      </div>
+    </div>
+
+    <main>
+      <div>
+        <div class="header-container">
+          <a href="#" onclick="(e)=>{e.preventDefault(); history.back();}"
+            ><img src="./images/arrow-back.svg"
+          /></a>
+          <h3 class="page-title">Cart</h3>
+          <div></div>
+        </div>
+      </div>
+      <section>
+        <div class="cart-container">
+          <div class="cart-items">
+            <div class="cart-item-container">
+              <div>
+                <input type="radio" name="cart-item" id="" />
+              </div>
+              <div class="img">
+                <img src="./images/Ellipse 30.png" alt="" />
+              </div>
+              <div class="cart-item">
+                <h4 class="name">Wild and Sexy</h4>
+                <p class="detail">
+                  Products include: baby daisies, roses, gerberas, hydrangeas
+                </p>
+                <div class="bottom">
+                  <span class="price">49$</span>
+                  <div class="number-input">
+                    <button
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    ></button>
+                    <input
+                      class="quantity"
+                      min="0"
+                      name="quantity"
+                      value="1"
+                      type="number"
+                    />
+                    <button
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                      class="plus"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+              <img class="del-icon" src="./images/delete-icon.svg" alt="" />
+            </div>
+            <div class="cart-item-container">
+              <div>
+                <input type="radio" name="cart-item" id="" />
+              </div>
+              <div class="img">
+                <img src="./images/Ellipse 30.png" alt="" />
+              </div>
+              <div class="cart-item">
+                <h4 class="name">Wild and Sexy</h4>
+                <p class="detail">
+                  Products include: baby daisies, roses, gerberas, hydrangeas
+                </p>
+                <div class="bottom">
+                  <span class="price">49$</span>
+                  <div class="number-input">
+                    <button
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    ></button>
+                    <input
+                      class="quantity"
+                      min="0"
+                      name="quantity"
+                      value="1"
+                      type="number"
+                    />
+                    <button
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                      class="plus"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+              <img class="del-icon" src="./images/delete-icon.svg" alt="" />
+            </div>
+          </div>
+          <div class="input-control">
+            <label class="input-label">Choose a delivery date:</label>
+            <div><input type="date" /></div>
+          </div>
+          <div class="input-control">
+            <label class="input-label">Choose a delivery time:</label>
+            <div><input type="time" /></div>
+          </div>
+          <div class="input-control">
+            <label class="input-label" style="margin-bottom: 20px"
+              >Message to recipient:</label
+            >
+            <div class="input-message">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="5"
+                class="input-message"
+              ></textarea>
+            </div>
+          </div>
+          <div class="input-control">
+            <label class="input-label">Sender’s name:</label>
+            <div><input type="text" style="width: 670px" /></div>
+          </div>
+        </div>
+        <div class="payment-container">
+          <div class="payment-methods">
+            <div class="payment-method">
+              <input type="radio" id="payment-cash" name="payment" />
+              <label for="payment-cash" class="payment-label">
+                PAYMENT IN CASH
+              </label>
+            </div>
+            <div class="other-method">
+              <div class="payment-method">
+                <input type="radio" name="payment" />
+                <label for="" class="payment-label">
+                  <img src="./images/image 1.png" alt="" />
+                </label>
+              </div>
+              <div class="payment-method">
+                <input type="radio" name="payment" />
+                <label for="" class="payment-label">
+                  <img src="./images/image 2.png" alt="" />
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="payment-summary">
+            <div class="row"><span>Amount</span> <span>2</span></div>
+            <div class="row total"><span>Total</span> <span>98$</span></div>
+            <!-- <div class="divider"></div> -->
+            <button class="btn">Payment</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="footer">
+      <div class="footer__row">
+        <div class="footer__row__1">
+          <img src="./images/Asset 1@300x 3.png" alt="" />
+        </div>
+        <div class="footer__row__2">
+          <h3>INFORMATION</h3>
+          <p>home</p>
+          <p>shop</p>
+          <p>FAq</p>
+          <p>about us</p>
+          <p>contact</p>
+          <p>log in</p>
+        </div>
+        <div class="footer__row__3">
+          <div class="footer__row__3__top">
+            <p>Monday - Friday: 7am - 5pm</p>
+            <p>Saturday: 9am - 3pm</p>
+            <p>Sunday: CLOSED</p>
+          </div>
+          <div class="footer__row__3__bottom">
+            <p>hannah: 800-440-6105</p>
+            <p>bao uy: 856-678-3611</p>
+            <p>hoang ha: 856-485-0080</p>
+          </div>
+        </div>
+        <div class="footer__row__4">
+          <h3>Social</h3>
+          <div class="icon">
+            <div class="icon-wrapper">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="icon-wrapper">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="icon-wrapper">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

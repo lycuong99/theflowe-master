@@ -527,7 +527,7 @@
 }
 
 .category__row__item {
-  width: 200px;
+  max-width: 300px;
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -547,9 +547,15 @@
   margin-top: 100px;
   color: #fff;
   font-family: "MyWebFont", sans-serif;
-  font-size: 22px;
+  font-size: 36px;
   letter-spacing: 12px;
   font-weight: 400;
+  transition: transform 0.2s ease-in;
+}
+
+.category h4:hover {
+  transform: scale(1.1);
+  color: #740000;
 }
 
 .gift {

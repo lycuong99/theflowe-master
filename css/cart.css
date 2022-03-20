@@ -1,0 +1,352 @@
+main {
+  background-color: #61702f;
+  /* padding-top: 154px; */
+  padding: 154px 120px 96px;
+}
+section {
+  padding: 0 40px;
+}
+/* Header */
+.page-title {
+  font-family: "Hermes", cursive;
+  text-align: center;
+  font-size: 72px;
+  font-weight: 200;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.page-title:hover {
+  color: #740000;
+  font-size: 86px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 100px;
+}
+.header-container .page-title {
+}
+.header-container a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+/* Items */
+
+/* Item */
+
+.cart-item-container {
+  border-bottom: 3px solid #740000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 64px 12px;
+  margin-bottom: 24px;
+}
+.cart-items {
+  margin-bottom: 56px;
+}
+.cart-item-container .img {
+  margin-left: 50px;
+  margin-right: 64px;
+}
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: auto;
+  height: 182px;
+  justify-content: space-around;
+}
+.cart-item .name {
+  font-family: "MyWebFont";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 38px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #740000;
+}
+
+.cart-item .price {
+  font-family: "BASKVILL";
+  font-size: 36px;
+  font-weight: 700;
+
+  color: #740000;
+}
+
+.cart-item .del-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.cart-item .detail {
+  font-family: "BASKVILL";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: white;
+}
+.cart-item .bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 56px;
+}
+
+/* INPUT */
+.input-control {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.input-message {
+  width: 100%;
+  display: block;
+}
+
+input[type="text"],
+textarea {
+  background: #ffffff;
+  border: 3px solid #740000;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 24px;
+}
+/* input[type="number"] {
+  border: 1px solid #740000;
+  box-sizing: border-box;
+  border-radius: 65px;
+  background-color: transparent;
+} */
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+/* CUSTOM INPUT - NUMBER */
+.number-input {
+  border: 2px solid #ddd;
+  display: inline-flex;
+}
+
+.number-input {
+  border: 1px solid #740000;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+
+.number-input button {
+  outline: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+
+.number-input button:before,
+.number-input button:after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 1rem;
+  height: 2px;
+  background-color: white;
+  transform: translate(-50%, -50%);
+}
+.number-input button.plus:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.number-input input[type="number"] {
+  font-family: sans-serif;
+  max-width: 48px;
+  padding: 0.5rem;
+  border: none;
+  color: white;
+  height: 3rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+
+  font-family: "BASKVILL";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.number-input input[type="number"]:focus {
+  border: none;
+  border-width: 0;
+}
+.number-input input[type="number"]:focus-visible {
+  border: none;
+}
+
+/* RADIO */
+input[type="radio"] {
+  accent-color: #740000;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  color: transparent;
+  position: relative;
+}
+input[type="radio"]::before {
+  content: "";
+  border: 3px solid #740000;
+  height: 100%;
+  width: 100%;
+  top: -3px;
+  left: -3px;
+  position: absolute;
+  border-radius: 50%;
+}
+input[type="date"],input[type="time"] {
+  border: 1px solid #740000;
+  border-radius: 50px;
+  height: 60px;
+  font-family: "BASKVILL";
+  color: black;
+  font-size: 24px;
+  padding: 12px 20px;
+  background: transparent;
+}
+
+.input-label {
+  font-family: "BASKVILL";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+
+  width: 30%;
+}
+
+/* Payment */
+.payment-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  border-top: 3px solid #740000;
+  margin-top: 164px;
+  padding-top: 36px;
+}
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: stretch;
+  width: 50%;
+  row-gap: 133px;
+}
+
+.other-method {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.payment-method {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 65px;
+}
+
+.payment-method input {
+  /* margin-right: 65px; */
+  /* display: block; */
+}
+
+.payment-label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+.payment-summary {
+  align-self: end;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.payment-summary .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 36px;
+  width: 506px;
+}
+.payment-summary .row.total {
+  position: relative;
+}
+.payment-summary .row.total::after {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  background-color: #740000;
+  height: 3px;
+  width: 100%;
+}
+.payment-summary span {
+  font-family: "BASKVILL" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.divider {
+  background-color: #740000;
+  height: 3px;
+}
+
+.payment-summary button {
+  background: #740000;
+  border-radius: 71px;
+  font-family: "BASKVILL";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  /* identical to box height */
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 18px 55px;
+  border: none;
+}
